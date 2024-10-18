@@ -1,0 +1,110 @@
+\doxysection{release/\+Project/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{release/Project/main.cpp@{release/Project/main.cpp}}
+
+
+This file contains the {\ttfamily Win\+Main} entry point of the Win32 Application.  
+
+
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int WINAPI \mbox{\hyperlink{main_8cpp_aa7757ad201b851d7989ac68dfe943845}{Win\+Main}} (HINSTANCE h\+Instance, HINSTANCE h\+Prev\+Instance, LPSTR sz\+Cmd\+Line, int n\+Cmd\+Show)
+\begin{DoxyCompactList}\small\item\em This is the {\ttfamily Win\+Main} entry point program stub for a Win32 App. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the {\ttfamily Win\+Main} entry point of the Win32 Application. 
+
+\doxysubsubsubsection*{Win32 Resources\+:}
+
+\href{http://www.winprog.org/tutorial/start.html}{\texttt{ The Forget\textquotesingle{}s Win32 Program Tutorials}} ~\newline
+ \href{https://cplusplus.com/forum/articles/16820/\#google_vignette}{\texttt{ Making Win32 API Being Unicode Friendly -\/ LPWTFISALLTHIS}} ~\newline
+ \href{https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/}{\texttt{ Transmission Zero -\/ Building Win32 GUI Applications with Min\+GW}} ~\newline
+ \href{https://learn.microsoft.com/en-us/windows/win32/learnwin32/managing-application-state-}{\texttt{ Managing Application State -\/ An Object Oriented Approach for coding Win32}} ~\newline
+
+
+\begin{DoxyAuthor}{Author}
+{$\lambda$}ambda 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+@today
+\end{DoxyDate}
+~\newline
+ \begin{DoxyVerb}This file contains the `main` entry point of the program
+& serves as a stub code block for quick-setup using
+a makefile => to produce this code block, run `make init`
+from the command line, which will NOT overwrite
+an existing main.cpp file
+\end{DoxyVerb}
+ 
+
+Compiling the program in debug mode using makefile ~\newline
+ {\ttfamily \texorpdfstring{$>$}{>} make win} 
+
+Compiling the program in release mode using makefile ~\newline
+ {\ttfamily \texorpdfstring{$>$}{>} make release} 
+
+Compiling the program on the command line with debug console ~\newline
+ {\ttfamily \texorpdfstring{$>$}{>} g++ \doxylink{main_8cpp}{main.\+cpp} -\/o main.\+exe -\/D UNICODE -\/D \+\_\+\+UNICODE -\/municode -\/other-\/linker-\/options} 
+
+Compiling the program on the command line as Win32 GUI program ~\newline
+ {\ttfamily \texorpdfstring{$>$}{>} g++ \doxylink{main_8cpp}{main.\+cpp} -\/o main.\+exe -\/D UNICODE -\/D \+\_\+\+UNICODE -\/municode -\/mwindows} 
+
+The below {\ttfamily MACRO}\textquotesingle{}s are only to be defined when compiling as a {\ttfamily UNICODE} build ~\newline
+ It\textquotesingle{}s possible, but unnecessary to define a recipe in a makefile to toggle between {\ttfamily ANSI} \& {\ttfamily UNICODE} builds 
+
+{\ttfamily makefile} passes in the following commands\+: {\ttfamily -\/D UNICODE -\/D \+\_\+\+UNICODE} ~\newline
+ Thus, there is no need to define the {\ttfamily UNICODE} \& {\ttfamily \+\_\+\+UNICODE} {\ttfamily MACRO}\textquotesingle{}s here ... ~\newline
+ The {\ttfamily MACRO}\textquotesingle{}s are left here as comments, nonetheless ... 
+
+define {\ttfamily UNICODE} {\ttfamily MACRO} before importing {\ttfamily \texorpdfstring{$<$}{<}Windows.\+h\texorpdfstring{$>$}{>}} header ~\newline
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ UNICODE}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ UNICODE}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ \_UNICODE}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_UNICODE}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_aa7757ad201b851d7989ac68dfe943845}\label{main_8cpp_aa7757ad201b851d7989ac68dfe943845} 
+\index{main.cpp@{main.cpp}!WinMain@{WinMain}}
+\index{WinMain@{WinMain}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{WinMain()}{WinMain()}}
+{\footnotesize\ttfamily int WINAPI Win\+Main (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Instance,  }\item[{HINSTANCE}]{h\+Prev\+Instance,  }\item[{LPSTR}]{sz\+Cmd\+Line,  }\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+
+
+This is the {\ttfamily Win\+Main} entry point program stub for a Win32 App. 
+
+\begin{DoxyVerb}`WinMain` is a `MACRO` for `WinMainW` & `WinMainA` depending on
+    whether the program is compiled as `ANSI` or `UNICODE`, respectively.
+    The compiler replaces `WinMain` by `WinMainW` if `UNICODE` build is selected
+    The compiler replaces WinMain by `WinMainA` if `ANSI` build is selected
+The same is true for all variable naming conventions in Win32 API Programming
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em h\+Instance} & handle on Window Instance \\
+\hline
+\mbox{\texttt{ in}}  & {\em h\+Prev\+Instance} & handle on Previous Window Instance \\
+\hline
+\mbox{\texttt{ in}}  & {\em sz\+Cmd\+Line} & zero-\/terminated string =\texorpdfstring{$>$}{>} command line arguments \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+Cmd\+Show} & number of command line arguments passed in from the console \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer return value indicating program {\ttfamily EXIT\+\_\+\+STATUS} 
+\end{DoxyReturn}
+Also NOTE\texorpdfstring{$\ast$}{*}\+: {\ttfamily TEXT(\"{}string literal\"{})} is a {\ttfamily MACRO} that compiles to {\ttfamily L\"{}string literal\"{}} in {\ttfamily UNICODE} mode and compiles to {\ttfamily \"{}string literal\"{}} in {\ttfamily ANSI} mode

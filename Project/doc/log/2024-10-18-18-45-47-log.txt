@@ -1,0 +1,5 @@
+Date:  2024-10-18 18:45:47
+Name:  Antonio
+Surname:  Vermiccelli
+Email:  vermiccelliantonio@gmail.com
+LOG Message:  This is an example log message
