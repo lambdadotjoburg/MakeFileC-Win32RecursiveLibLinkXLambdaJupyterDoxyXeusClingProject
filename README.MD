@@ -187,7 +187,7 @@ an existing main.cpp file
 
 * Deploying simple Win32 GUI `WinMain`, `WinMainW` & console `main` applications start-up stubs
 * AUTOMATION toolchain "setup" project & documentation automation toolchain => techstack expansion/evolution/integration
-* utilizing/exploiting C++ language features for building & automating the project automation project
+* utilizing/exploiting C++ language features for building & automating the project build
 * "industrial quality"/"highly-scalable"/"project-design"-oriented
 
 <p>
