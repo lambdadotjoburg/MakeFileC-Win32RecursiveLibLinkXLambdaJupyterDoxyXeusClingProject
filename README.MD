@@ -189,7 +189,7 @@ an existing main.cpp file
 * AUTOMATION toolchain "setup" project & documentation automation toolchain => techstack expansion/evolution/integration
 * utilizing/exploiting C++ language features for building & automating the project automation project
 * "industrial quality"/"highly-scalable"/"project-design"-oriented
-* 
+
 <p>
 i.e. with FOCUS on the PROGRAMMER's NEEDS Rather than the over-all COMPUTER-TASKS & other non-functional-driven libraries. <br/>
 i.e. this project library "borrows" concept (inter-disciplinary) between related-scientific <br/>
