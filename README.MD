@@ -316,55 +316,19 @@ building "good quality" applications with minimal effort & integrates flawlessly
 * automating Win32 programming, yet maintaining flexibility, inter-operability & serves as an EXTREMELY PROVERFUL TOOL
 * Win32 MicroSoft Window's X 2000's plus series automation library for building Win32 applications WHILE DOCUMENTING THE PROJECT!
 * RECORDED DEMO VIDEOS included project build & launch/release
-<p>
 
+<p>
 The "arguably simplest" `makefile` you'll ever need for building windows framework C++ Win32 API Programs <br/>
 & `makefile` syntax reader/interpreter framework/ that build's default start-up projects quick-setup/easy-deploy <br/>
 & how-to's on using simple makefile instructions, like ... <br/>
 </p>
 
-* Backup restore point
-* log-file management
-* project settings
-* user-preferences & configurations
+* `makefile` "garbage" removal/"project cleanup"
+* program entry-point stub code
+* auto-documentation/log-file managemer/proj. maintenance
+* project settings, user pref's & config's
 * quick-setup/quick-start/easy-deploy/ ... => all in a single makefile
 
-project => to automate simple for building mini Win32 Projects => a quick-start guide
-on using the `makefile` recipes to automate mundane tasks for setting up Win32 API
-Instructions (A Win32 project application-setup library & generates
-"system calls" & limit's programmer's responsibilities for interaction
-with Win32 `makefile` "garbage" (also understood as "project cleanup" & documentation maintenance) "mundane developer" C++ operations & limit's programmer's )
-Documented from Multiple Internet Resources & Embedded by
+This project reduces programmer's burden for writing scalable applications & automates building Win32 Projects
+=> a quick-start setup on using the `makefile` recipes to automate mundane tasks for setting up Win32 API proj's
 </p>
-
-#### git INSTRUCTIONS for commit to REPO  
-
-[generating an ssh key for github secure protocol interface](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
-
-[setting git username & user email for git conig](https://stackoverflow.com/questions/37805621/change-email-address-in-git)  
-
-<code>
-> echo "# MakeFileC-Win32RecursiveLibHeaderFileLinkXLambdaJupyterDoxyXeusClingProject" >> README.md <br/>
-> git init <br/>
-> git add README.md <br/>
-> git commit -m "first commit" <br/>
-> git branch -M main <br/>
-> git remote add origin git@github.com:lambdadotjoburg/MakeFileC- Win32RecursiveLibHeaderFileLinkXLambdaJupyterDoxyXeusClingProject.git <br/>
-> git push -u origin main <br/>
-> git branch -M main <br/>
-> git push -u origin main <br/>
-</code>
-
-  
-
-#### git INSTRUCTION for commit to REPO (PSEUDO-CODE)  
-
-<code>
-> create README.md FILE <br/>
-> git add README.md <br/>
-> write a message for the project commit <br/>
-> configure the repo for main branch target <br/>
-> push the source code base to the main branch <br/>
-> add origin/github repo url <br/>
-> push to the man branch <br/>
-</code>
